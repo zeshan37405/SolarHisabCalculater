@@ -1,31 +1,36 @@
 # Solar Hisab Calculator
 
-A free, static, multilingual solar sizing and cost-estimation calculator for a global audience. The brand is country-neutral; the project name and future custom domain should not include a country name.
+A free, static, multilingual solar sizing and cost-estimation calculator for a global audience. The brand is country-neutral and does not require a paid domain, backend, database or hosting service.
 
-## Included in Step 1
+## Website features
 
-- Responsive calculator interface and appliance-based daily energy estimate.
-- 21 country/market planning assumptions in `rates.json`.
-- 25 language choices, including RTL support for Urdu, Arabic, Persian, Pashto and Sindhi.
-- Solar panel count, indicative system size, inverter suggestion and broad budget estimate.
-- SEO metadata, WebApplication structured data, sitemap and robots file.
-- Educational solar guide in `blog/`.
-- Scheduled GitHub Actions reminder to review market assumptions.
+- Responsive solar calculator for desktop and mobile.
+- Appliance-based daily energy estimate with editable wattage and hours.
+- Add and remove custom appliances; results update as inputs change.
+- Optional 20% design safety margin.
+- Approximate system capacity, 580W panel count and inverter suggestion.
+- 21 country/market cost assumptions and 25 language choices, including RTL support for Urdu, Arabic, Persian, Pashto and Sindhi.
+- About, Privacy Policy, Terms and educational guide pages.
+- Search metadata, structured data, sitemap and robots.txt.
+- Scheduled GitHub Actions reminder every 10 days to review market assumptions.
+
+## Publish for free with GitHub Pages
+
+1. Open this repository's **Settings → Pages**.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select branch **main** and folder **/(root)**, then save.
+4. Wait for the Pages deployment to finish. The repository address is expected to be:
+   https://zeshan37405.github.io/SolarHisabCalculater/
+5. If Pages is already enabled, check the **Actions** tab for the latest Pages build status.
+
+No paid domain is required. A custom domain is optional and must be checked for availability before purchase.
 
 ## Run locally
 
-This is a static website. Open `index.html` through a local static server so that the browser can load `rates.json` with fetch. No backend, database or paid service is required.
+Open the repository through a local static web server so the browser can load `rates.json`. The project has no backend.
 
-## Publish with GitHub Pages
+## Accuracy and safety
 
-1. Open **Settings → Pages** in this repository.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Select branch **main** and folder **/(root)**, then save.
-4. Wait for GitHub Pages to publish the site. The default address will be based on this repository name and GitHub username.
-5. A future custom domain can be a neutral global name, without a country code or country name. Check domain availability before buying; no domain purchase is required for GitHub Pages.
+The values in `rates.json` are illustrative planning assumptions, not live supplier prices or verified quotations. The scheduled workflow creates a review reminder; it does not automatically collect or verify prices. Update assumptions only after checking dated, reliable local sources.
 
-## Important accuracy notes
-
-Figures in `rates.json` are illustrative planning assumptions, not verified live market prices. The workflow opens a periodic review issue; it does not automatically fetch or validate supplier prices. Update figures only after checking dated, reliable local sources.
-
-The calculator is educational only. A qualified local solar professional must verify site conditions, electrical design, battery requirements, local codes and final costs. No search ranking or financial result is guaranteed.
+The calculator is educational only. A qualified local solar professional must verify site conditions, electrical design, panel and inverter compatibility, battery requirements, local codes, grid rules and final costs. No savings, performance or search ranking is guaranteed.
