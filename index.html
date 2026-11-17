@@ -1,33 +1,68 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Solar Hisab Calculator | Solar Panel Size & Cost Estimator</title>
-<meta name="description" content="Estimate your solar system size, panels, inverter and installation budget. Free multilingual solar calculator for homes around the world.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Solar Hisab Calculator | Free Solar Panel Size & Cost Estimator</title>
+<meta name="description" content="Estimate household solar energy use, system size, 580W panel count and an indicative local budget. Free global solar calculator in 25 languages.">
 <meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://zeshan37405.github.io/Solar-hisab-calculator/">
+<link rel="canonical" href="https://zeshan37405.github.io/SolarHisabCalculater/">
 <link rel="sitemap" type="application/xml" href="./sitemap.xml">
-<meta property="og:type" content="website"><meta property="og:title" content="Solar Hisab Calculator"><meta property="og:description" content="Plan your home solar system with a free global calculator.">
-<meta name="theme-color" content="#f5faf6"><link rel="stylesheet" href="style.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Solar Hisab Calculator","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"A free estimate tool for household solar system sizing and cost planning."}</script>
-<script defer src="translations.js"></script><script defer src="script.js"></script>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Solar Hisab Calculator">
+<meta property="og:description" content="Plan your home solar system with a free multilingual calculator.">
+<meta property="og:url" content="https://zeshan37405.github.io/SolarHisabCalculater/">
+<meta name="theme-color" content="#f5faf6">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Solar Hisab Calculator","url":"https://zeshan37405.github.io/SolarHisabCalculater/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"A free educational tool for household solar system sizing and cost planning."}</script>
+<script defer src="translations.js"></script>
+<script defer src="script.js"></script>
 </head>
 <body>
-<header class="top"><a class="brand" href="./"><span class="brand-mark">☀</span> Solar Hisab</a><nav><a href="#calculator" data-i18n="navCalc">Calculator</a><a href="#how" data-i18n="navHow">How it works</a><a href="#faq">FAQ</a><a href="#about" data-i18n="navAbout">About</a></nav><div class="tools"><select id="language" aria-label="Language"></select><button class="menu" id="menuBtn" aria-label="Open menu">☰</button></div></header>
+<header class="top">
+<a class="brand" href="./"><span class="brand-mark">☀</span> Solar Hisab</a>
+<nav id="mainNav"><a href="#calculator" data-i18n="navCalc">Calculator</a><a href="#how" data-i18n="navHow">How it works</a><a href="#faq">FAQ</a><a href="about.html">About</a></nav>
+<div class="tools"><select id="language" aria-label="Choose language"></select><button class="menu" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button></div>
+</header>
 <main>
-<section class="hero"><div class="hero-copy"><span class="eyebrow" data-i18n="eyebrow">SMART HOME ENERGY PLANNING</span><h1 data-i18n="heroTitle">Know your solar needs before you invest.</h1><p data-i18n="heroText">Estimate system size, panel count and a planning budget using your appliances and local market assumptions.</p><a class="primary" href="#calculator" data-i18n="start">Calculate my system <span>→</span></a><div class="trust"><span>✓ Free to use</span><span>✓ 25 languages</span><span>✓ No sign-up</span></div></div><div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="panel"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="leaf">⌁</div></div></section>
-<section class="calculator section" id="calculator"><div class="section-head"><span class="eyebrow">YOUR HOME</span><h2 data-i18n="calcTitle">Build your solar estimate</h2><p data-i18n="calcIntro">Choose a country, add appliances and enter how long each runs daily.</p></div>
-<div class="calc-grid"><div class="form-card"><label for="country" data-i18n="country">Country / market</label><select id="country"></select><div class="appliance-head"><h3 data-i18n="appliances">Appliances</h3><span data-i18n="dailyHours">Hours per day</span></div><div id="appliances"></div><div class="add-row"><button id="addCustom" class="outline">＋ Add custom appliance</button></div><label class="safety-label"><input type="checkbox" id="safety" checked> <span data-i18n="safety">Include 20% design safety margin</span></label><button id="calculate" class="primary full" data-i18n="calculate">Calculate my solar system</button></div>
-<div class="result-card" aria-live="polite"><span class="eyebrow" data-i18n="estimate">YOUR ESTIMATE</span><h3 data-i18n="resultTitle">A starting point for your solar plan</h3><div class="metric"><span data-i18n="dailyUse">Estimated daily energy</span><strong id="daily">0 kWh</strong></div><div class="metric"><span data-i18n="systemSize">Recommended system size</span><strong id="system">0 kW</strong></div><div class="metric"><span data-i18n="panelCount">580W panels (approx.)</span><strong id="panels">0</strong></div><div class="metric"><span data-i18n="inverter">Suggested inverter</span><strong id="inverter">0 kW</strong></div><div class="budget"><span data-i18n="budget">Indicative equipment & installation budget</span><strong id="cost">—</strong><small id="costNote">Planning estimate only; local quotes may vary.</small></div><button id="print" class="outline full" data-i18n="print">Print / save estimate</button></div></div><p class="disclaimer" data-i18n="disclaimer">This is an educational estimate, not an electrical design or quotation. A qualified local installer must verify roof, shade, wiring, battery needs, grid rules and safety.</p>
+<section class="hero">
+<div class="hero-copy"><span class="eyebrow" data-i18n="eyebrow">SMART HOME ENERGY PLANNING</span><h1 data-i18n="heroTitle">Know your solar needs before you invest.</h1><p data-i18n="heroText">Estimate system size, panel count and a planning budget using your appliances and local market assumptions.</p><a class="primary" href="#calculator" data-i18n="start">Calculate my system <span>→</span></a><div class="trust"><span>✓ Free to use</span><span>✓ 25 languages</span><span>✓ No sign-up</span></div></div>
+<div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="panel"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="leaf">⌁</div></div>
 </section>
-<section class="section how" id="how"><div class="section-head"><span class="eyebrow">SIMPLE PROCESS</span><h2 data-i18n="howTitle">From appliances to a solar plan</h2></div><div class="steps"><article><b>01</b><h3 data-i18n="step1">List your appliances</h3><p>Choose common home devices or add your own wattage and daily use.</p></article><article><b>02</b><h3 data-i18n="step2">Review the estimate</h3><p>See daily energy, approximate panel count and inverter capacity.</p></article><article><b>03</b><h3 data-i18n="step3">Compare local quotes</h3><p>Use the estimate as a discussion guide with qualified installers.</p></article></div></section>
-<section class="section info" id="about"><div><span class="eyebrow">ABOUT THIS TOOL</span><h2 data-i18n="aboutTitle">Clearer solar decisions, anywhere.</h2><p data-i18n="aboutText">Solar Hisab Calculator is an independent educational tool. It helps households understand the relationship between appliance use, solar capacity and indicative costs. It is not affiliated with a panel or inverter manufacturer.</p><p>Read our <a href="#privacy">Privacy</a> and <a href="#terms">Terms</a> notes below. For general feedback, use the project repository.</p><p><a href="blog/ghar-ke-liye-solar-kitne-ka-lagega.html">Read: How much solar capacity does a home need?</a></p></div><div class="info-card"><strong>580W</strong><span>Reference panel rating used for the panel-count estimate. Change this assumption with your installer's actual module specification.</span></div></section>
+<section class="calculator section" id="calculator">
+<div class="section-head"><span class="eyebrow">YOUR HOME</span><h2 data-i18n="calcTitle">Build your solar estimate</h2><p data-i18n="calcIntro">Choose a country, add appliances and enter how long each runs daily.</p></div>
+<div class="calc-grid">
+<div class="form-card">
+<label for="country" data-i18n="country">Country / market</label><select id="country"></select>
+<div class="appliance-head"><h3 data-i18n="appliances">Appliances</h3><span data-i18n="dailyHours">Hours per day</span></div>
+<div id="appliances"></div>
+<div class="add-row"><button id="addCustom" class="outline" type="button">＋ Add custom appliance</button></div>
+<label class="safety-label"><input type="checkbox" id="safety" checked><span data-i18n="safety">Include 20% design safety margin</span></label>
+<button id="calculate" class="primary full" type="button" data-i18n="calculate">Calculate my solar system</button>
+</div>
+<div class="result-card" aria-live="polite"><span class="eyebrow" data-i18n="estimate">YOUR ESTIMATE</span><h3 data-i18n="resultTitle">A starting point for your solar plan</h3>
+<div class="metric"><span data-i18n="dailyUse">Estimated daily energy</span><strong id="daily">0 kWh</strong></div>
+<div class="metric"><span data-i18n="systemSize">Recommended system size</span><strong id="system">0 kW</strong></div>
+<div class="metric"><span data-i18n="panelCount">580W panels (approx.)</span><strong id="panels">0</strong></div>
+<div class="metric"><span data-i18n="inverter">Suggested inverter</span><strong id="inverter">0 kW</strong></div>
+<div class="budget"><span data-i18n="budget">Indicative equipment & installation budget</span><strong id="cost">—</strong><small id="costNote">Planning estimate only; local quotes may vary.</small></div>
+<button id="print" class="outline full" type="button" data-i18n="print">Print / save estimate</button>
+</div></div>
+<p class="disclaimer" data-i18n="disclaimer">This is an educational estimate, not an electrical design or quotation. A qualified local installer must verify roof, shade, wiring, battery needs, grid rules and safety.</p>
+</section>
+<section class="section how" id="how"><div class="section-head"><span class="eyebrow">SIMPLE PROCESS</span><h2 data-i18n="howTitle">From appliances to a solar plan</h2></div><div class="steps">
+<article><b>01</b><h3 data-i18n="step1">List your appliances</h3><p>Choose common home devices or add your own wattage and daily use.</p></article>
+<article><b>02</b><h3 data-i18n="step2">Review the estimate</h3><p>See daily energy, approximate panel count and inverter capacity.</p></article>
+<article><b>03</b><h3 data-i18n="step3">Compare local quotes</h3><p>Use the estimate as a discussion guide with qualified installers.</p></article>
+</div></section>
+<section class="section info" id="about"><div><span class="eyebrow">ABOUT THIS TOOL</span><h2 data-i18n="aboutTitle">Clearer solar decisions, anywhere.</h2><p data-i18n="aboutText">Solar Hisab Calculator is an independent educational tool. It helps households understand the relationship between appliance use, solar capacity and indicative costs. It is not affiliated with a panel or inverter manufacturer.</p><p><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms and disclaimer</a> · <a href="about.html">About this project</a></p><p><a href="blog/ghar-ke-liye-solar-kitne-ka-lagega.html">Read: How much solar capacity does a home need?</a></p></div><div class="info-card"><strong>580W</strong><span>Reference panel rating used for the panel-count estimate. Confirm the actual module specification with your installer.</span></div></section>
 <section class="section faq" id="faq"><div class="section-head"><span class="eyebrow">HELP CENTRE</span><h2>Frequently asked questions</h2></div>
-<details><summary>Is this solar estimate guaranteed?</summary><p>No. It is a preliminary estimate based on the values entered and simplified assumptions. A site survey and electrical design are essential.</p></details>
-<details><summary>Does the calculator include batteries?</summary><p>The current version estimates energy and a broad system budget. Battery sizing is not included because backup duration, battery chemistry and usable capacity must be selected separately.</p></details>
-<details><summary>Why does my actual quote differ?</summary><p>Prices depend on equipment brands, taxes, labor, roof structure, mounting, wiring, permits, grid connection and local market conditions.</p></details>
-<details><summary>Can I use this outside one country?</summary><p>Yes. Select one of the available markets. The country cost figures are broad planning assumptions, not live supplier prices.</p></details>
+<details><summary>Is this solar estimate guaranteed?</summary><p>No. It is a preliminary estimate based on your inputs and simplified assumptions. A site survey and electrical design are essential.</p></details>
+<details><summary>Does the calculator include batteries?</summary><p>No. Battery sizing depends on backup loads, required hours, battery chemistry, usable capacity and inverter compatibility. Ask a qualified installer to design storage separately.</p></details>
+<details><summary>Why can my actual quote differ?</summary><p>Prices depend on equipment brands, taxes, labor, roof structure, mounting, wiring, permits, grid connection and local market conditions.</p></details>
+<details><summary>Can I use this outside one country?</summary><p>Yes. Select one of the listed markets. Country cost figures are broad planning assumptions, not live supplier prices.</p></details>
+<details><summary>Does the website store my appliance information?</summary><p>The calculator processes your entries in your browser. It does not require an account or send appliance entries to a project server.</p></details>
 </section>
-<section class="legal section" id="privacy"><h2>Privacy note</h2><p>This static calculator processes appliance inputs in your browser. It does not require an account and this project does not intentionally send your appliance entries to a server. Your hosting provider may collect standard technical logs.</p><div id="terms"><h2>Terms and estimation disclaimer</h2><p>Use this tool for general information only. Figures are estimates, not professional engineering advice, financial advice, a binding quote or a guarantee of savings. You are responsible for obtaining local approvals and engaging qualified professionals. Market rates may be outdated or inaccurate. To the extent permitted by law, the project authors are not liable for decisions made solely from these estimates.</p></div></section>
-</main><footer><a class="brand" href="./">☀ Solar Hisab</a><span>Independent • Free • Global</span><span>© <span id="year"></span> Solar Hisab Calculator</span></footer>
+</main>
+<footer><a class="brand" href="./">☀ Solar Hisab</a><span>Independent • Free • Global</span><span>© <span id="year"></span> Solar Hisab Calculator</span></footer>
 </body></html>
