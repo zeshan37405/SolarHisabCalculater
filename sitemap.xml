@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://zeshan37405.github.io/Solar-hisab-calculator/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://zeshan37405.github.io/Solar-hisab-calculator/#about</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://zeshan37405.github.io/Solar-hisab-calculator/blog/ghar-ke-liye-solar-kitne-ka-lagega.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zeshan37405.github.io/SolarHisabCalculater/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://zeshan37405.github.io/SolarHisabCalculater/about.html</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://zeshan37405.github.io/SolarHisabCalculater/privacy.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://zeshan37405.github.io/SolarHisabCalculater/terms.html</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://zeshan37405.github.io/SolarHisabCalculater/blog/ghar-ke-liye-solar-kitne-ka-lagega.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
