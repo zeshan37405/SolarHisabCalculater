@@ -1,0 +1,2 @@
+Project files prepared: 2026-11-17
+Market assumptions in rates.json are illustrative estimates, not live prices. The date is a project review date, not a verified supplier-price update.

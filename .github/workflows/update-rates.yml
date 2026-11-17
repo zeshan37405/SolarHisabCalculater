@@ -1,0 +1,29 @@
+name: Solar rate review reminder
+on:
+  schedule:
+    - cron: "17 6 */10 * *"
+  workflow_dispatch:
+permissions:
+  issues: write
+jobs:
+  reminder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open a rate review issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "Review solar market assumptions";
+            const body = [
+              "Please review rates.json and verify each country's indicative cost assumptions using dated, reputable local sources.",
+              "",
+              "Checklist:",
+              "- Add source links and the date checked.",
+              "- Do not describe estimates as live prices unless a reliable live feed exists.",
+              "- Update the `updated` field only after review.",
+              "- Keep all figures clearly labelled as estimates."
+            ].join("\n");
+            const existing = await github.rest.issues.listForRepo({owner: context.repo.owner, repo: context.repo.repo, state: "open", per_page: 100});
+            if (!existing.data.some(issue => issue.title === title)) {
+              await github.rest.issues.create({owner: context.repo.owner, repo: context.repo.repo, title, body});
+            }

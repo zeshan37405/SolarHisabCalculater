@@ -1,0 +1,29 @@
+{
+  "updated": "2026-11-17",
+  "note": "Illustrative planning assumptions only. Not live supplier prices or verified quotations. Review and replace with dated local market research before relying on these figures.",
+  "panel_watt": 580,
+  "sun_hours_assumption": 4.5,
+  "countries": [
+    {"code":"US","name":"United States","currency":"USD","symbol":"$","cost_per_kw":1450},
+    {"code":"GB","name":"United Kingdom","currency":"GBP","symbol":"£","cost_per_kw":1250},
+    {"code":"CA","name":"Canada","currency":"CAD","symbol":"C$","cost_per_kw":1900},
+    {"code":"AU","name":"Australia","currency":"AUD","symbol":"A$","cost_per_kw":1700},
+    {"code":"PK","name":"Pakistan","currency":"PKR","symbol":"Rs","cost_per_kw":210000},
+    {"code":"IN","name":"India","currency":"INR","symbol":"₹","cost_per_kw":65000},
+    {"code":"BD","name":"Bangladesh","currency":"BDT","symbol":"৳","cost_per_kw":95000},
+    {"code":"AE","name":"United Arab Emirates","currency":"AED","symbol":"AED","cost_per_kw":4200},
+    {"code":"SA","name":"Saudi Arabia","currency":"SAR","symbol":"SAR","cost_per_kw":4300},
+    {"code":"QA","name":"Qatar","currency":"QAR","symbol":"QAR","cost_per_kw":4400},
+    {"code":"OM","name":"Oman","currency":"OMR","symbol":"OMR","cost_per_kw":420},
+    {"code":"ZA","name":"South Africa","currency":"ZAR","symbol":"R","cost_per_kw":19000},
+    {"code":"NG","name":"Nigeria","currency":"NGN","symbol":"₦","cost_per_kw":1800000},
+    {"code":"KE","name":"Kenya","currency":"KES","symbol":"KSh","cost_per_kw":150000},
+    {"code":"DE","name":"Germany","currency":"EUR","symbol":"€","cost_per_kw":1350},
+    {"code":"FR","name":"France","currency":"EUR","symbol":"€","cost_per_kw":1450},
+    {"code":"ES","name":"Spain","currency":"EUR","symbol":"€","cost_per_kw":1250},
+    {"code":"IT","name":"Italy","currency":"EUR","symbol":"€","cost_per_kw":1400},
+    {"code":"BR","name":"Brazil","currency":"BRL","symbol":"R$","cost_per_kw":5500},
+    {"code":"MX","name":"Mexico","currency":"MXN","symbol":"MX$","cost_per_kw":23000},
+    {"code":"ID","name":"Indonesia","currency":"IDR","symbol":"Rp","cost_per_kw":18000000}
+  ]
+}

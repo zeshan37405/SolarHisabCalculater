@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zeshan37405.github.io/Solar-hisab-calculator/sitemap.xml
